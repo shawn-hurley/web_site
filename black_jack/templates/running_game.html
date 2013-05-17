@@ -1,0 +1,23 @@
+{% extends "base.html" %}
+{% block default-content %}
+<body>
+    <p>Money: {{ player.money }}</p>
+    <p>Bet: {{ player.bet }}</p>
+    <p>Winning Streak: {{ player.winning_streak }}</p>
+    <p>Hand: {{ player.hand }}</p>
+    <p>Value of Hand: {{ player.hand.value }}</p>
+    {% for card in player.hand.get_cards %}
+        <img src={{ card.2 }}>
+
+    {% endfor %}
+    <p>Value of dealers Hand: {{ dealer.hand.value }}</p>
+    {% for card in dealer.hand.get_cards %}
+        <img src={{ card.2 }}>
+    {% endfor %}
+    <img src="/static/cards/b2fv.png">
+    <br/>
+    <br/>
+    <a href="/game/hit/?player={{ player }}"><button>Hit</button></a>
+    <a href="/game/finish"><button>Stand</button></a>
+</body>
+{% endblock %}

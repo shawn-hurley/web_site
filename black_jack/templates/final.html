@@ -1,0 +1,23 @@
+{% extends "base.html" %}
+{% block default-content %}
+<body>
+    <p>Player's Hands Value:
+    {{ player.hand.value }}</p>
+    {% for card in player.hand.get_cards %}
+        <img src={{ card.2 }}>
+    {% endfor %}
+    <br/>
+    <br>
+    <p>Dealer's Hands Value:
+    {{ dealer.hand.value }}</p>
+    {% for card in dealer.hand.get_cards %}
+        <img src={{ card.2 }}>
+    {% endfor %}
+    <br>
+    </br>
+    <p>The Winner Is:</p>
+    {{ winner }}
+    <br>
+    <a href="/game/main"><button>New Game</button></a>
+</body>
+{% endblock %}

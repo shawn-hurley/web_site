@@ -1,0 +1,13 @@
+{% extends "base.html" %}
+{% block default-content %}
+<body>
+    <p>Money: {{ player.money }}</p>
+    <p>Winning Streak: {{ player.winning_streak }}</p>
+    <label>Bet:</label>
+    <input id="id_bet" name="pennies" type="text">
+    <br>
+    <br>
+    <a href="/game/start_game/"><button id="start_game_button" disabled="disabled">Start_Game</button></a>
+
+</body>
+{% endblock %}

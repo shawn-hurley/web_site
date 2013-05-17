@@ -1,0 +1,80 @@
+* {
+	margin:0;
+	padding:0;
+	#text-align: center;
+}
+
+#headerbackground {
+	height: 180px;
+	margin-bottom: -180px;
+	background-color: #203e6b;
+}
+#game_background {
+    background-color: #1a6b0a;
+    text-align: center;
+}
+button {
+    font-size: 18;
+    font-weight: bold;
+    padding: .6em;
+    background-color: #203e6b;
+    color: #A01414;
+    border: #a01414;
+}
+:disabled{
+    background-color: #A01414;
+    color: #203e6b;
+}
+h1 {
+	font-family: Verdana;
+	font-weight: bold;
+	font-family: 'Sacramento', 'Press Start 2P';
+	padding-top: .5em;
+	padding-bottom: .5em;
+	color: #A01414;
+}
+h3 {
+	color: #B81212;
+}
+p { 
+	color: #000000;
+	font-size: 18px;
+	font-family: 'Bubblegum Sans';
+	line-height: 1.5;
+}
+a{
+	text-decoration: none;
+    padding: 1em;
+}
+
+.about_me {
+	width:675px;
+	margin:0 auto;
+	text-align:center;
+	background-color: #ffffff;
+}
+.underheader{
+	text-align: center;
+}
+.paragraph {
+	padding-left: .7em;
+	padding-right: .7em;
+	text-align: center;
+}
+.header {
+	background-color: #203e6b;
+	width:675px;
+	margin:0 auto;
+	height: 180px;
+}
+nav a {
+	font-size:23px;
+	color:#A37A00;	
+}
+.header p {
+	color: #CC9900;
+	font-size: 20px;
+}
+.header p a {
+	color:#A37A00;
+}
